@@ -24,6 +24,8 @@ shdlkfjghljkökälölh
 * **Blabla 1**
 * **Blabal 2**
 
+[Link to GitHUB](https://github.com)
+
 # Material and Methods
 ## *Statistical Analysis*
 ```{r LEGO-logo, out.width="30%", out.height="30%"}
