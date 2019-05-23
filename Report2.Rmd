@@ -1,0 +1,48 @@
+---
+title: "Report2"
+author: "Olga"
+date: "23 Mai 2019"
+output:
+  html_document:
+    theme: paper
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=F} 
+source(here::here("R/package-loading.R"))
+knitr::opts_chunk$set(echo = F, warning = F)
+```
+
+# Abstract
+hsdjgldöfköhkögjklö
+shdlkfjghljkökälölh
+
+# Introduction
+* **Blabla 1**
+* **Blabal 2**
+
+# Material and Methods
+## *Statistical Analysis*
+```{r LEGO-logo, out.width="30%", out.height="30%"}
+knitr::include_graphics(here::here("LEGO.png"))
+```
+
+# Results
+sajdgflkjhlsfghjkl
+
+```{r , out.width="150%", out.height="150%"}
+NHANES %>% filter(!is.na(Diabetes)) %>%
+ggplot(aes(x = Poverty, y = BMI, colour = Diabetes, fill = Diabetes)) +
+  geom_point(alpha=0.2) +
+  geom_smooth(method = "gam") +
+  scale_color_manual( values=c("darkorchid4", "darkgreen")) +
+  scale_fill_manual( values=c("darkorchid4", "darkgreen")) +
+  facet_grid(cols = vars(SurveyYr),
+             rows = vars(Gender)) +
+  theme_classic()
+```
+
+
